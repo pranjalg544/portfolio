@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranjal Gupta — CS Undergrad & AI/ML Engineer</title>
+  <meta name="description"
+    content="Portfolio of Pranjal Gupta — CS undergrad at University of Delhi building AI/ML systems: satellite imagery analysis, safety tech, computer vision, and more." />
+  <meta name="keywords"
+    content="Pranjal Gupta, ML engineer, AI, computer vision, portfolio, University of Delhi, Python, deep learning" />
+  <meta name="author" content="Pranjal Gupta" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pranjal Gupta — CS Undergrad & AI/ML Engineer" />
+  <meta property="og:description"
+    content="CS undergrad building AI/ML systems — from satellite imagery to safety tech." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <header>
+    <nav id="site-nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="#hero" class="nav-logo">Pranjal Gupta<span></span></a>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/resume.pdf" class="nav-cta" download="Pranjal_Gupta_Resume.pdf" rel="noopener">Resume
+              ↓</a></li>
+        </ul>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false"
+          aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Available for opportunities</p>
+          <h1 class="hero-name">Pranjal<br>Gupta</h1>
+          <p class="hero-tagline">
+            CS undergrad building <strong>AI/ML systems</strong> —
+            from satellite imagery reconstruction to real-time computer vision and safety tech.
+          </p>
+          <p class="hero-meta">📍 Bangalore / Delhi &nbsp;·&nbsp; B.Tech CSE, University of Delhi &nbsp;·&nbsp;
+            2024–2028</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+              View Projects
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="assets/resume.pdf" class="btn btn-outline" download="Pranjal_Gupta_Resume.pdf" rel="noopener"
+              id="hero-download-resume">
+              Download Resume
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+        scroll
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section-label">About</p>
+        <h2 class="section-heading" id="about-heading">Who I am</h2>
+        <div class="about-grid">
+          <div class="about-body reveal">
+            <p>
+              I'm a first-year Computer Science student at the <strong>Faculty of Technology, University of
+                Delhi</strong>,
+              with a CGPA of 8.20. I spend most of my time at the intersection of machine learning and real-world
+              systems —
+              the kind of work where model performance is measured in decibels or lives kept safer, not benchmark
+              leaderboard positions.
+            </p>
+            <p>
+              My recent focus has been computer vision: I built a gesture-controlled drone system at
+              <strong>Pracverse</strong>
+              using MediaPipe and OpenCV, and developed a SAR-guided cloud removal pipeline for ISRO satellite imagery
+              that reconstructs cloud-free scenes at <strong>33.62 dB PSNR</strong> — a quantifiable result I'm proud
+              of.
+            </p>
+            <p>
+              Outside pure ML, I've shipped a cross-platform safety app (Flutter + Twilio), a multi-role healthcare
+              platform
+              with an AI chatbot, and an automated eligibility system with OCR. I like building things that have a clear
+              user
+              on the other end.
+            </p>
+          </div>
+          <aside class="about-sidebar reveal">
+            <div class="about-facts reveal-stagger">
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <span class="fact-value">Bangalore / Delhi, India</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Degree</span>
+                <span class="fact-value">B.Tech CSE — Univ. of Delhi</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">CGPA</span>
+                <span class="fact-value">8.20 / 10</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Current focus</span>
+                <span class="fact-value">Computer Vision, ML Systems</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Interests</span>
+                <span class="fact-value">Satellite Imagery, Safety Tech, Open Source</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE
+         ============================================================ -->
+    <section id="experience" aria-labelledby="exp-heading">
+      <div class="container">
+        <p class="section-label">Experience</p>
+        <h2 class="section-heading" id="exp-heading">Where I've worked</h2>
+        <div class="reveal">
+          <article class="exp-card" aria-label="Pracverse internship">
+            <div class="exp-header">
+              <div>
+                <div class="exp-role">Computer Vision Intern</div>
+                <div class="exp-company">Pracverse</div>
+              </div>
+              <div class="exp-date">Apr 2026 – Aug 2026 &nbsp;·&nbsp; Delhi, India</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Designed and built a <strong>gesture-controlled drone system</strong> — real-time hand-gesture capture
+                translated into flight commands, reducing operator cognitive load significantly over joystick
+                interfaces.
+              </li>
+              <li>
+                Developed the full hand-tracking and gesture-recognition pipeline using <strong>OpenCV</strong> and
+                <strong>MediaPipe</strong>: landmark detection, gesture classification, and command mapping at video
+                framerate.
+              </li>
+              <li>
+                Worked end-to-end: from data collection and pipeline prototyping to integration with drone control APIs
+                and latency optimization for real-time operation.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h2 class="section-heading" id="projects-heading">Things I've built</h2>
+
+        <div class="projects-grid">
+
+          <!-- ── FEATURED: LISS-IV SAR ── -->
+          <article class="project-card featured reveal" aria-label="LISS-IV SAR Cloud Removal project">
+            <div class="project-visual">
+              <span class="project-visual-badge">ISRO Hackathon</span>
+              <div class="project-visual-inner">
+                <div class="project-metrics-row">
+                  <div>
+                    <div class="project-metric">33.62</div>
+                    <div class="project-metric-label">dB PSNR</div>
+                  </div>
+                  <div>
+                    <div class="project-metric">0.96</div>
+                    <div class="project-metric-label">SSIM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LISS-IV SAR-Guided Cloud Removal</h3>
+              <p class="project-tagline">
+                Reconstructing cloud-free satellite scenes by fusing cloudy optical imagery with Sentinel-1 SAR data.
+              </p>
+              <ul class="project-bullets">
+                <li>U-Net (ResNet-34 encoder) trained to fuse multi-source satellite inputs — SAR backscatter fills
+                  where clouds block optical sensors.</li>
+                <li>Validated at <strong>33.62 dB PSNR</strong> and <strong>0.96 SSIM</strong> — strong structural
+                  fidelity to ground-truth cloud-free imagery.</li>
+                <li>Built full preprocessing pipeline and an interactive <strong>Streamlit demo</strong> for end-to-end
+                  cloud removal inference.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">PyTorch</span>
+                <span class="stack-tag">U-Net / ResNet-34</span>
+                <span class="stack-tag">Sentinel-1 SAR</span>
+                <span class="stack-tag">Streamlit</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pranjalg544" class="project-link" target="_blank" rel="noopener"
+                  aria-label="View LISS-IV project on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── NaariRakshak ── -->
+          <article class="project-card reveal" aria-label="NaariRakshak safety app project">
+            <div class="project-body">
+              <h3 class="project-title">NaariRakshak</h3>
+              <p class="project-tagline">AI-powered women's commute-safety companion — SOS, live tracking, real-time
+                alerts.</p>
+              <ul class="project-bullets">
+                <li>Cross-platform mobile app (Flutter/Dart) with one-tap SOS broadcasting via <strong>Twilio
+                    API</strong>.</li>
+                <li>Live location sharing over <strong>OpenStreetMap</strong> routing — no proprietary map lock-in.</li>
+                <li>Background location tracking and trusted contact management with persistent secure storage.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Flutter</span>
+                <span class="stack-tag">Dart</span>
+                <span class="stack-tag">Twilio API</span>
+                <span class="stack-tag">OpenStreetMap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pranjalg544" class="project-link" target="_blank" rel="noopener"
+                  aria-label="View NaariRakshak on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Genricycle ── -->
+          <article class="project-card reveal" aria-label="Genricycle healthcare platform project">
+            <div class="project-body">
+              <h3 class="project-title">Genricycle</h3>
+              <p class="project-tagline">DBMS-backed healthcare &amp; sustainability platform — four user roles, one
+                system.</p>
+              <ul class="project-bullets">
+                <li>Multi-role platform serving patients, doctors, delivery partners, and labs — telemedicine, lab
+                  tracking, pharma logistics in one codebase.</li>
+                <li>AI chatbot for patient support; secure backend handles transactions, orders, and profile management.
+                </li>
+                <li>Full-stack: Python/TypeScript backend, relational schema design, REST API layer.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">HTML</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pranjalg544" class="project-link" target="_blank" rel="noopener"
+                  aria-label="View Genricycle on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── ELIGIFY ── -->
+          <article class="project-card reveal" aria-label="ELIGIFY exam eligibility system project">
+            <div class="project-body">
+              <h3 class="project-title">ELIGIFY</h3>
+              <p class="project-tagline">Automated exam eligibility checking — dual-strategy PDF parsing with OCR
+                fallback.</p>
+              <ul class="project-bullets">
+                <li>Flask app automating eligibility checks via dual-strategy PDF parser: PyPDF2 for structured text +
+                  <strong>Tesseract OCR</strong> fallback for scanned documents.
+                </li>
+                <li>OpenCV preprocessing pipeline improves OCR accuracy on low-quality document scans.</li>
+                <li>MVC architecture, REST API, SQL backend — production-ready structure, not a script.</li>
+              </ul>
+              <div class="project-stack">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Flask</span>
+                <span class="stack-tag">OpenCV</span>
+                <span class="stack-tag">Tesseract OCR</span>
+                <span class="stack-tag">HTML5 / CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/pranjalg544" class="project-link" target="_blank" rel="noopener"
+                  aria-label="View ELIGIFY on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================
+         EDUCATION
+         ============================================================ -->
+    <section id="education" aria-labelledby="edu-heading">
+      <div class="container">
+        <p class="section-label">Education</p>
+        <h2 class="section-heading" id="edu-heading">Academic background</h2>
+        <ol class="edu-list reveal-stagger" aria-label="Educational history">
+
+          <li class="edu-item">
+            <div class="edu-timeline" aria-hidden="true">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-school">Faculty of Technology, University of Delhi</div>
+              <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+              <div class="edu-meta">
+                <span class="edu-year">2024 – 2028</span>
+                <span class="edu-grade">CGPA 8.20 / 10</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="edu-item">
+            <div class="edu-timeline" aria-hidden="true">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-school">Presidency PU College</div>
+              <div class="edu-degree">Intermediate (Class XII)</div>
+              <div class="edu-meta">
+                <span class="edu-year">2023</span>
+                <span class="edu-grade">92%</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="edu-item">
+            <div class="edu-timeline" aria-hidden="true">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-school">R.T.N.E.T Public School</div>
+              <div class="edu-degree">High School (Class X)</div>
+              <div class="edu-meta">
+                <span class="edu-year">2021</span>
+                <span class="edu-grade">GPA 8.9 / 10</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section-label">Skills</p>
+        <h2 class="section-heading" id="skills-heading">What I work with</h2>
+        <div class="skills-grid reveal-stagger">
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">Languages</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>Python</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>C / C++</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>JavaScript / TypeScript</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Dart</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">ML / CV</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>PyTorch</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>OpenCV</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>MediaPipe</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Tesseract OCR</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Streamlit</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">Web & Mobile</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>HTML5 / CSS3</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Flask</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Flutter</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">Data & Systems</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>MySQL / SQL</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>DBMS design</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Data Structures</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>MVC architecture</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">Tools</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>Git / GitHub</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-heading">Concepts</h3>
+            <ul class="skill-list">
+              <li><span class="skill-dot" aria-hidden="true"></span>Computer Vision</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Deep Learning (CNNs, U-Net)</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>Image Segmentation</li>
+              <li><span class="skill-dot" aria-hidden="true"></span>OOP / DSA</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-label">Contact</p>
+        <div class="contact-inner">
+
+          <div class="reveal">
+            <h2 class="contact-heading" id="contact-heading">Let's talk.</h2>
+            <p class="contact-intro">
+              I'm currently open to internships, research collaborations, and interesting project conversations.
+              The fastest way to reach me is email.
+            </p>
+            <a href="mailto:pranjalg544@gmail.com" class="btn btn-primary" id="contact-email-btn">
+              Send an email
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="contact-links reveal-stagger reveal">
+            <a href="mailto:pranjalg544@gmail.com" class="contact-link-item" aria-label="Email Pranjal Gupta">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">pranjalg544@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/pranjalgupta544" class="contact-link-item" target="_blank" rel="noopener"
+              aria-label="Connect on LinkedIn">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/pranjalgupta544</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/pranjalg544" class="contact-link-item" target="_blank" rel="noopener"
+              aria-label="View GitHub profile">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/pranjalg544</div>
+              </div>
+            </a>
+
+            <a href="tel:+918073426101" class="contact-link-item" aria-label="Call Pranjal Gupta">
+              <div class="contact-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.48 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">Phone</div>
+                <div class="contact-link-value">+91 807 342 6101</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="current-year"></span> Pranjal Gupta. Built with vanilla HTML, CSS &amp; JS.</span>
+      <span>Bangalore / Delhi, India</span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/scrollReveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

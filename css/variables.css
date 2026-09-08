@@ -1,0 +1,65 @@
+﻿/* ============================================================
+   variables.css — Design tokens
+   Palette: Warm Neutral Light (Option A from implementation plan)
+   - Background: #FAFAF7 (warm off-white)
+   - Text: #1A1A1A (near-black)
+   - Accent: #C1502E (terracotta)
+   ============================================================ */
+
+:root {
+  /* ── Colors ── */
+  --bg:          #FAFAF7;
+  --bg-2:        #F2F2EE;
+  --bg-3:        #E8E8E3;
+  --text:        #1A1A1A;
+  --text-muted:  #555550;
+  --text-dim:    #9A9A94;
+  --accent:      #C1502E;
+  --accent-dark: #A84226;
+  --border:      rgba(26, 26, 26, 0.08);
+  --border-2:    rgba(26, 26, 26, 0.16);
+
+  /* ── Typography ── */
+  --font-heading: 'Space Grotesk', 'General Sans', system-ui, sans-serif;
+  --font-body:    'IBM Plex Sans', 'Inter', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', 'Fira Code', monospace;
+
+  /* Fluid type scale using clamp() */
+  --fs-xs:   clamp(0.7rem,  1vw,   0.8rem);
+  --fs-sm:   clamp(0.85rem, 1.2vw, 0.9rem);
+  --fs-base: clamp(1rem,    1.5vw, 1.05rem);
+  --fs-md:   clamp(1.1rem,  1.8vw, 1.2rem);
+  --fs-lg:   clamp(1.3rem,  2.2vw, 1.5rem);
+  --fs-xl:   clamp(1.6rem,  3vw,   2rem);
+  --fs-2xl:  clamp(2rem,    4vw,   2.8rem);
+  --fs-3xl:  clamp(2.6rem,  5vw,   4rem);
+  --fs-4xl:  clamp(3.2rem,  6.5vw, 5.5rem);
+
+  /* ── Spacing — 8px base unit ── */
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-7:  64px;
+  --space-8:  80px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-padding: clamp(var(--space-3), 5vw, var(--space-7));
+
+  /* ── Motion ── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --duration-s: 200ms;
+  --duration-m: 350ms;
+  --duration-l: 500ms;
+
+  /* ── Border radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}

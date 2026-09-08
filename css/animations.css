@@ -1,0 +1,113 @@
+﻿/* ============================================================
+   animations.css — Scroll reveal & micro-interactions
+   One-time, purposeful motion only.
+   ============================================================ */
+
+/* ── Reveal base state (hidden) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--duration-l) var(--ease-out),
+    transform var(--duration-l) var(--ease-out);
+}
+
+/* ── Stagger delays for list items ── */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--duration-l) var(--ease-out),
+    transform var(--duration-l) var(--ease-out);
+}
+
+.reveal-stagger > *:nth-child(1)  { transition-delay: 0ms; }
+.reveal-stagger > *:nth-child(2)  { transition-delay: 60ms; }
+.reveal-stagger > *:nth-child(3)  { transition-delay: 120ms; }
+.reveal-stagger > *:nth-child(4)  { transition-delay: 180ms; }
+.reveal-stagger > *:nth-child(5)  { transition-delay: 240ms; }
+.reveal-stagger > *:nth-child(6)  { transition-delay: 300ms; }
+.reveal-stagger > *:nth-child(7)  { transition-delay: 360ms; }
+.reveal-stagger > *:nth-child(8)  { transition-delay: 420ms; }
+.reveal-stagger > *:nth-child(9)  { transition-delay: 480ms; }
+
+/* ── Visible state (triggered by JS) ── */
+.reveal.visible,
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Slide from left ── */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition:
+    opacity var(--duration-l) var(--ease-out),
+    transform var(--duration-l) var(--ease-out);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Hero entrance (pre-built, no JS needed) ── */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-eyebrow {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 100ms both;
+}
+
+.hero-name {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 220ms both;
+}
+
+.hero-tagline {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 340ms both;
+}
+
+.hero-meta {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 400ms both;
+}
+
+.hero-actions {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 480ms both;
+}
+
+.hero-scroll-hint {
+  animation: hero-fade-up var(--duration-l) var(--ease-out) 700ms both;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > *,
+  .reveal-left {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-eyebrow,
+  .hero-name,
+  .hero-tagline,
+  .hero-meta,
+  .hero-actions,
+  .hero-scroll-hint {
+    animation: none;
+  }
+
+  .scroll-line::after {
+    animation: none;
+  }
+}
