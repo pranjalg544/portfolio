@@ -1,4 +1,4 @@
-﻿/**
+/**
  * main.js
  * - Nav scroll state (adds .scrolled class)
  * - Mobile nav toggle
@@ -111,4 +111,63 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  /* ── Web3Forms Contact Form Submission ── */
+  const contactForm = document.getElementById('contact-form');
+  const formResult = document.getElementById('form-result');
+  const submitBtn = document.getElementById('form-submit-btn');
+  const btnText = document.getElementById('btn-text');
+
+  if (contactForm && formResult && submitBtn) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const originalText = btnText ? btnText.textContent : 'Send Message';
+      if (btnText) btnText.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      formResult.className = 'form-result';
+      formResult.style.display = 'none';
+
+      const formData = new FormData(contactForm);
+      const jsonObject = {};
+      formData.forEach((value, key) => {
+        jsonObject[key] = value;
+      });
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(jsonObject)
+      })
+        .then(async (response) => {
+          const json = await response.json();
+          if (response.status === 200 && json.success) {
+            formResult.textContent = json.message || 'Thank you! Your message has been sent successfully.';
+            formResult.className = 'form-result success';
+            contactForm.reset();
+          } else {
+            formResult.textContent = json.message || 'Something went wrong. Please try again or email directly.';
+            formResult.className = 'form-result error';
+          }
+        })
+        .catch(() => {
+          formResult.textContent = 'Network error. Please try emailing directly to pranjalg544@gmail.com.';
+          formResult.className = 'form-result error';
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          if (btnText) btnText.textContent = originalText;
+          formResult.style.display = 'block';
+          setTimeout(() => {
+            if (formResult.classList.contains('success')) {
+              formResult.style.display = 'none';
+            }
+          }, 6000);
+        });
+    });
+  }
+
 })();
+

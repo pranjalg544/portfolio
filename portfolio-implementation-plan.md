@@ -205,5 +205,7 @@ When handing this to Antigravity, also explicitly tell it:
 
 | Date | Change |
 |------|--------|
-| 2026-09-08 | **Initial build** — full portfolio scaffolded (HTML, 5 CSS files, 2 JS files). Dark cool-minimal palette (Option B) initially used. |
+| 2026-09-08 | **Initial build** — full portfolio scaffolded (HTML, 5 CSS files, 2 JS files). |
+| 2026-09-08 | **Theme switch → Light warm neutral (Option A)** — `variables.css` color tokens updated to `#FAFAF7` bg + `#C1502E` terracotta accent + `#1A1A1A` text. Nav backdrop rgba updated in `layout.css`. |
 | 2026-09-08 | **Resume wired** — `CV.pdf` copied to `assets/resume.pdf`; `download="Pranjal_Gupta_Resume.pdf"` added to nav and hero resume links so clicking triggers a download instead of opening in-browser. |
+| 2026-09-08 | **Web3Forms Contact Form** — Interactive contact form wired with API access key `0223678d-1032-488b-bc97-9b6a362d5e5c`, AJAX submission with loading/success/error feedback, honeypot spam protection, and responsive card layout. |
